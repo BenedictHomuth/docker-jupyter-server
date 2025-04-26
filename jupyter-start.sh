@@ -8,4 +8,4 @@ then
     fi
 fi
 
-jupyter notebook --ip='*' --port=8080 --notebook-dir=opt/notebooks --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
+jupyter notebook --ip='*' --port=8080 --notebook-dir=opt/notebooks --no-browser --allow-root --ServerApp.token='' --ServerApp.password=''
