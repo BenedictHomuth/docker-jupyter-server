@@ -30,3 +30,6 @@ If you wish to provide own commands you set an environment variable to hinder th
 | ENV Var | Default Value | Description |
 |----------|----------|----------|
 | MANUAL_CONF    | -   | Omits the execution of this repo's `jupyter-start.sh` script. You then must provide your own commands on container startup.   |
+
+# Important note on security
+By default this image is not ready to be run in "production". For now the container's jupyter instance by default listens on all IP addresses and no https is configured. Furhter it does not have a token or a password set for notebooks etc. If you intent to use this in a more professional or shared setting, please change at a minimum those listed vulnerabilities. More might be needed! 
