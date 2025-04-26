@@ -1,0 +1,8 @@
+FROM continuumio/anaconda3:2024.10-1
+RUN conda install jupyter -y --quiet
+RUN mkdir -p /opt/notebooks
+
+COPY jupyter-start.sh /opt
+RUN chmod +x /opt/jupyter-start.sh
+
+ENTRYPOINT /opt/jupyter-start.sh
