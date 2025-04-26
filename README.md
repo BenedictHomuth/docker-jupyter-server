@@ -5,7 +5,7 @@ This repo is providing a dockerfile based on anaconda, specifically for jupyter 
 
 ## Build
 ```
-docker build -t jupyter-server .
+docker build -t jupyter-server -f dockerfile.jupyter .
 ```
 ## Run
 ```
